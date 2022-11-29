@@ -36,5 +36,18 @@ export default {
       title: "Details",
       type: "string",
     },
+    {
+      title: "Product Category",
+      name: "categorySet",
+      type: "string",
+      options: {
+        list: [
+          { title: "Jackets", value: "jacket" },
+          { title: "Shoes", value: "shoe" },
+          { title: "Jumpers", value: "jumper" },
+          { title: "T-Shirts", value: "t-shirt" },
+        ],
+      },
+    },
   ],
 };
