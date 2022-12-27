@@ -9,7 +9,7 @@ import {
 import { Product } from "../../components";
 const ProductDetails = ({ product, products }) => {
   //Destructure the product prop
-  const { image, name, details, price } = product;
+  const { image, name, details, price, category, gender } = product;
   const [index, setIndex] = useState(0);
   return (
     <div>
@@ -48,7 +48,9 @@ const ProductDetails = ({ product, products }) => {
             <p>(20)</p>
           </div>
           <h4>Details: </h4>
-          <p>{details}</p>
+          <p>Description: {details}</p>
+          <p>Category: {category}</p>
+          <p>Gender: {gender}</p>
           <p className="price">${price}</p>
         </div>
       </div>

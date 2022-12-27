@@ -38,7 +38,7 @@ export default {
     },
     {
       title: "Product Category",
-      name: "categorySet",
+      name: "category",
       type: "string",
       options: {
         list: [
@@ -48,6 +48,19 @@ export default {
           { title: "T-Shirts", value: "t-shirt" },
         ],
       },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: "Gender",
+      name: "gender",
+      type: "string",
+      options: {
+        list: [
+          { title: "Mens", value: "mens" },
+          { title: "Womens", value: "womens" },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

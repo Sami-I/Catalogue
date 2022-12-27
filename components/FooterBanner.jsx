@@ -39,4 +39,14 @@ const FooterBanner = ({
   );
 };
 
+export const getServerSideProps = async () => {
+  //Grab banner data from the Sanity dashboard
+  const bannerQuery = '*[_type == "banner"]';
+  const footerBanner = await client.fetch(bannerQuery);
+
+  return {
+    props: { footerBanner },
+  };
+};
+
 export default FooterBanner;

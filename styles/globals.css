@@ -422,7 +422,6 @@ span.text-red {
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
-  background-color: #f02d34;
 }
 .small-images-container {
   display: flex;
@@ -462,7 +461,7 @@ span.text-red {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #f02d34;
+  color: #27a71b;
 }
 .price .old-price,
 .product-price .old-price,

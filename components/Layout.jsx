@@ -1,7 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "./Navbar";
+import SiteNavbar from "./SiteNavbar";
+import HeroBanner from "./HeroBanner";
+import FooterBanner from "./FooterBanner";
 import Footer from "./Footer";
+import { client } from "../lib/client";
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +13,7 @@ const Layout = ({ children }) => {
         <title>Catalogue</title>
       </Head>
       <header>
-        <Navbar></Navbar>
+        <SiteNavbar></SiteNavbar>
       </header>
       <main className="main-container">{children}</main>
       <footer>
