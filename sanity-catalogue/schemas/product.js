@@ -42,10 +42,10 @@ export default {
       type: "string",
       options: {
         list: [
-          { title: "Jackets", value: "jacket" },
-          { title: "Shoes", value: "shoe" },
-          { title: "Jumpers", value: "jumper" },
-          { title: "T-Shirts", value: "t-shirt" },
+          { title: "Jackets", value: "jackets" },
+          { title: "Shoes", value: "shoes" },
+          { title: "Jumpers", value: "jumpers" },
+          { title: "T-Shirts", value: "t-shirts" },
         ],
       },
       validation: (Rule) => Rule.required(),
